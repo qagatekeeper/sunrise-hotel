@@ -1,0 +1,54 @@
+.navbar-wrapper {
+  width: 100vw;
+  height: 72px;
+  background-color: var(--bg-blue);
+  color: var(--white);
+}
+
+.navbar-container{
+  width: 1170px;
+}
+
+.navbar-brand{
+  color: var(--white);
+  font-size:31px;
+  letter-spacing: 5px;
+  line-height: 25px;
+  position: relative;
+  font-weight: 700;
+}
+
+span{
+  color: var(--bg-yellow);
+}
+
+p{
+  letter-spacing: 5.7px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--color-yellow);
+  font-weight: 600;
+  margin: 0;
+}
+
+.navbar-menu-list{
+  color: var(--white);
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+.navbar-menu-link{
+  color: var(--white);
+  font-size: 14.4px;
+  padding: 10px 26.6px;  
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-menu-link:hover{
+  color: var(--color-yellow);
+  border-bottom-style: solid;
+  border-color: var(--color-yellow);
+  border-width: 1px;
+}
