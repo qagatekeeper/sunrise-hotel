@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 const Navbar = () => {
+  const [active, setActive] = useState("home");
+
   return (
     <div className="navbar-wrapper flex absolute-center">
       <div className="navbar-container container">
@@ -18,32 +20,68 @@ const Navbar = () => {
             <div className="navbar-menu">
               <ul className="navbar-menu-list flex">
                 <li className="navbar-menu-item">
-                  <a href="#123" className="navbar-menu-link">
+                  <a
+                    href="#123"
+                    onClick={() => setActive("home")}
+                    className={`navbar-menu-link ${
+                      active === "home" ? "active" : ""
+                    }`}
+                  >
                     home
                   </a>
                 </li>
                 <li className="navbar-menu-item">
-                  <a href="#123" className="navbar-menu-link">
+                  <a
+                    href="#123"
+                    onClick={() => setActive("about")}
+                    className={`navbar-menu-link ${
+                      active === "about" ? "active" : ""
+                    }`}
+                  >
                     about
                   </a>
                 </li>
                 <li className="navbar-menu-item">
-                  <a href="#123" className="navbar-menu-link">
+                  <a
+                    href="#123"
+                    onClick={() => setActive("team")}
+                    className={`navbar-menu-link ${
+                      active === "team" ? "active" : ""
+                    }`}
+                  >
                     team
                   </a>
                 </li>
                 <li className="navbar-menu-item">
-                  <a href="#123" className="navbar-menu-link">
+                  <a
+                    href="#123"
+                    onClick={() => setActive("gallery")}
+                    className={`navbar-menu-link ${
+                      active === "gallery" ? "active" : ""
+                    }`}
+                  >
                     gallery
                   </a>
                 </li>
                 <li className="navbar-menu-item">
-                  <a href="#123" className="navbar-menu-link">
+                  <a
+                    href="#123"
+                    onClick={() => setActive("rooms")}
+                    className={`navbar-menu-link ${
+                      active === "rooms" ? "active" : ""
+                    }`}
+                  >
                     rooms
                   </a>
                 </li>
                 <li className="navbar-menu-item">
-                  <a href="#123" className="navbar-menu-link">
+                  <a
+                    href="#123"
+                    onClick={() => setActive("contact-us")}
+                    className={`navbar-menu-link ${
+                      active === "contact-us" ? "active" : ""
+                    }`}
+                  >
                     contact us
                   </a>
                 </li>

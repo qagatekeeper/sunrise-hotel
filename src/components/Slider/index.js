@@ -38,7 +38,7 @@ const Slider = () => {
     <div className="slider-wrapper">
       <Swiper
         slidesPerView={1}
-        spaceBetween={30}
+        spaceBetween={0}
         loop={true}
         centeredSlides={true}
         autoplay={{

@@ -44,9 +44,17 @@ span{
   font-size: 14.4px;
   padding: 10px 26.6px;  
   transition: all 0.2s ease-in-out;
+  margin: 0px 3px;
 }
 
 .navbar-menu-link:hover{
+  color: var(--color-yellow);
+  border-bottom-style: solid;
+  border-color: var(--color-yellow);
+  border-width: 1px;
+}
+
+.active{
   color: var(--color-yellow);
   border-bottom-style: solid;
   border-color: var(--color-yellow);
