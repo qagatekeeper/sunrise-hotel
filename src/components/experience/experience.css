@@ -1,0 +1,22 @@
+.exp-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.exp-title{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    padding: 61px 0px;
+    background-color: var(--bg-yellow);
+    color: var(--white);
+}
+
+.exp-link{
+    color: var(--white);
+    letter-spacing: 3.5px;
+    transition: all 0.2s ease-in-out;
+}
+.exp-link:hover{
+    color: var(--black);
+}

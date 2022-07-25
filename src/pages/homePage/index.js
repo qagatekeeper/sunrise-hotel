@@ -1,12 +1,13 @@
 import React from "react";
-import Navbar from "../../components/common/navbar";
-import PreNavbar from "../../components/common/preNavbar";
+import { PreNavbar, Navbar, Slider, Experience } from "../../components";
 
 const HomePage = () => {
   return (
     <>
       <PreNavbar />
       <Navbar />
+      <Slider />
+      <Experience />
     </>
   );
 };

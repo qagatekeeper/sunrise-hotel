@@ -4,7 +4,7 @@ import "./iconGrp.css";
 const IconGrp = () => {
   return (
     <>
-      <div className="pre-navbar-logos flex gap-1">
+      <div className="pre-navbar-logos flex gap-1 cursor-pointer">
         <div className="pre-navbar-logo flex absolute-center facebook ">
           <i className="fa-brands fa-facebook-f "></i>
         </div>

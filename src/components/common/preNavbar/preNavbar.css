@@ -1,11 +1,12 @@
 .pre-navbar-wrapper {
     background-color: var(--white);
+    
 }
 
 .pre-navbar{
     padding-left: 1rem;
-    height: 3rem;
-    width: 100vw;
+    height: 3rem; 
+    width: 100vw;   
 }
 
 .pre-navbar-menu-item {

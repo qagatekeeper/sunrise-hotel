@@ -10,7 +10,7 @@ const Navbar = () => {
               <a href="#123" className="navbar-brand">
                 SUN
                 <span> RISE</span>
-                <p>Your Dreamy Resort</p>
+                <p className="para">Your Dreamy Resort</p>
               </a>
             </h1>
           </div>

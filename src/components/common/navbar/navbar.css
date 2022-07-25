@@ -22,7 +22,7 @@ span{
   color: var(--bg-yellow);
 }
 
-p{
+.para{
   letter-spacing: 5.7px;
   font-size: 11px;
   text-transform: uppercase;

@@ -24,6 +24,10 @@
   align-items: center;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .gap-1 {
   gap: 1rem;
 }
