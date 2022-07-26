@@ -67,7 +67,7 @@ const Slider = () => {
           </a>
         </div>
         <div>
-          <a href="#123" className="slider-arrow bounce-top">
+          <a href="#about" className="slider-arrow bounce-top">
             <i class="fa-solid fa-arrow-down-long"></i>
           </a>
         </div>
