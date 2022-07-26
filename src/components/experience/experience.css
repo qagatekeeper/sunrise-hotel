@@ -20,3 +20,36 @@
 .exp-link:hover{
     color: var(--black);
 }
+
+/*===========bottom===============*/
+
+.exp-content{
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.exp-container{
+    width: 1170px;
+}
+
+.exp-text{
+    font-size: 1em;
+    color: var(--bg-yellow);
+    line-height: 2.3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.exp-text span{
+    display: block;
+    font-size: 25px!important;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.exp-bottom {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
