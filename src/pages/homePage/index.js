@@ -1,5 +1,12 @@
 import React from "react";
-import { PreNavbar, Navbar, Slider, Experience, About } from "../../components";
+import {
+  PreNavbar,
+  Navbar,
+  Slider,
+  Experience,
+  About,
+  Services,
+} from "../../components";
 
 const HomePage = () => {
   return (
@@ -9,6 +16,7 @@ const HomePage = () => {
       <Slider />
       <Experience />
       <About />
+      <Services />
     </>
   );
 };

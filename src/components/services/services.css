@@ -1,0 +1,27 @@
+.servixes-wrapper{
+    background-image: url(../../asserts/images/services.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    padding: 100px 0;
+}
+
+.services-header{
+    font-size: 3rem;
+    color: var(--white);
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+    font-family: 'Oswald', sans-serif;
+}
+
+.services-bottom{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.services-bottom-left{
+    border-right: 1px solid #b1b1b1;
+}
