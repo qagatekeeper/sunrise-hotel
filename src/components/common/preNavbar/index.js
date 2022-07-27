@@ -4,7 +4,7 @@ import "./preNavbar.css";
 
 const PreNavbar = () => {
   return (
-    <div className="pre-navbar-wrapper">
+    <div className="pre-navbar-wrapper" id="home">
       <div className="pre-navbar flex absolute-center jc-space-beetwen">
         <IconGrp />
         <div className="pre-navbar-contacts-menus">

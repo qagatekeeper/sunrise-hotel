@@ -1,7 +1,7 @@
 import React from "react";
 import "./iconGrp.css";
 
-const IconGrp = () => {
+const IconGrp = ({ display }) => {
   return (
     <>
       <div className="pre-navbar-logos flex gap-1 cursor-pointer">

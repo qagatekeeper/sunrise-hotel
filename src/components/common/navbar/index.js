@@ -21,7 +21,7 @@ const Navbar = () => {
               <ul className="navbar-menu-list flex">
                 <li className="navbar-menu-item">
                   <a
-                    href="#123"
+                    href="#home"
                     onClick={() => setActive("home")}
                     className={`navbar-menu-link ${
                       active === "home" ? "active" : ""
@@ -32,7 +32,7 @@ const Navbar = () => {
                 </li>
                 <li className="navbar-menu-item">
                   <a
-                    href="#123"
+                    href="#about"
                     onClick={() => setActive("about")}
                     className={`navbar-menu-link ${
                       active === "about" ? "active" : ""
@@ -43,7 +43,7 @@ const Navbar = () => {
                 </li>
                 <li className="navbar-menu-item">
                   <a
-                    href="#123"
+                    href="#team"
                     onClick={() => setActive("team")}
                     className={`navbar-menu-link ${
                       active === "team" ? "active" : ""
@@ -54,7 +54,7 @@ const Navbar = () => {
                 </li>
                 <li className="navbar-menu-item">
                   <a
-                    href="#123"
+                    href="#gallery"
                     onClick={() => setActive("gallery")}
                     className={`navbar-menu-link ${
                       active === "gallery" ? "active" : ""
@@ -65,7 +65,7 @@ const Navbar = () => {
                 </li>
                 <li className="navbar-menu-item">
                   <a
-                    href="#123"
+                    href="#rooms"
                     onClick={() => setActive("rooms")}
                     className={`navbar-menu-link ${
                       active === "rooms" ? "active" : ""
@@ -76,7 +76,7 @@ const Navbar = () => {
                 </li>
                 <li className="navbar-menu-item">
                   <a
-                    href="#123"
+                    href="#contact-us"
                     onClick={() => setActive("contact-us")}
                     className={`navbar-menu-link ${
                       active === "contact-us" ? "active" : ""
