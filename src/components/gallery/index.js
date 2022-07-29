@@ -6,7 +6,7 @@ import { galleryData } from "../../helpers/data/galleryData.js";
 const Gallery = () => {
   return (
     <div className="gallery-wrapper text-center" id="gallery">
-      <h3 className="gallery-title">Our Gallery</h3>
+      <h3 className="title">Our Gallery</h3>
       <div className="gallery-grid grid">
         {galleryData.map((item, index) => (
           <GalleryGrid image={item} key={index} />

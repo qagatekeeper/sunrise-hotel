@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <div className="servixes-wrapper">
       <div className="container">
-        <h3 className="services-header text-center">Our Services</h3>
+        <h3 className="services-header title text-center">Our Services</h3>
         <div className="services-bottom grid">
           <div className="services-bottom-left">
             <ServiceCard
