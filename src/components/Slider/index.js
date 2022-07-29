@@ -9,29 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./slider.css";
 
-const sliderData = [
-  {
-    id: 1,
-    heading: "SUN RISE",
-    subHeading: "WE KNOW WHAT YOU LOVE",
-    para: "Welcome to our hotels",
-    class: "slider-1",
-  },
-  {
-    id: 2,
-    heading: "SUN RISE",
-    subHeading: "Stay with friends & families",
-    para: "Come & enjoy precious moment with us",
-    class: "slider-2",
-  },
-  {
-    id: 3,
-    heading: "SUN RISE",
-    subHeading: "want luxurious vacation?",
-    para: "Get accommodation today",
-    class: "slider-3",
-  },
-];
+import { sliderData } from "../../helpers/data/sliderData.js";
 
 const Slider = () => {
   return (
@@ -68,13 +46,9 @@ const Slider = () => {
         </div>
         <div>
           <a href="#about" className="slider-arrow bounce-top">
-            <i class="fa-solid fa-arrow-down-long"></i>
+            <i className="fa-solid fa-arrow-down-long"></i>
           </a>
         </div>
-        {/* <SwiperSlide className="slider-1">
-        </SwiperSlide>
-        <SwiperSlide className="slider-2"></SwiperSlide>
-        <SwiperSlide className="slider-3"></SwiperSlide> */}
       </Swiper>
     </div>
   );

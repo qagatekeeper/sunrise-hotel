@@ -5,16 +5,11 @@
   color: var(--white);
 }
 
-.navbar-container{
-  width: 1170px;
-}
-
 .navbar-brand{
   color: var(--white);
   font-size:31px;
   letter-spacing: 5px;
   line-height: 25px;
-  position: relative;
   font-weight: 700;
 }
 
