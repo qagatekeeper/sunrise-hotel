@@ -11,7 +11,7 @@ const PreNavbar = () => {
           <div className="pre-navbar-contacts-menu-items flex">
             <div className="pre-navbar-menu-item flex gap-1">
               <div className="pre-navbar-menu-icon ">
-                <i class="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope"></i>
               </div>
               <div className="pre-navbar-menu-text">
                 <a href="#123">info@sunrise.com</a>
@@ -19,12 +19,12 @@ const PreNavbar = () => {
             </div>
             <div className="pre-navbar-menu-item flex gap-1">
               <div className="pre-navbar-menu-icon">
-                <i class="fa-solid fa-phone"></i>
+                <i className="fa-solid fa-phone"></i>
               </div>
               <div className="pre-navbar-menu-text">+94(65)222-44-55</div>
             </div>
             <div className="pre-navbar-menu-item search-bar flex absolute-center">
-              <i class="fa-solid fa-magnifying-glass serchbar-icon"></i>
+              <i className="fa-solid fa-magnifying-glass serchbar-icon"></i>
             </div>
           </div>
         </div>

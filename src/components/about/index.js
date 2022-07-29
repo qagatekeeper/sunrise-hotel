@@ -1,12 +1,11 @@
 import React from "react";
 import "./about.css";
-import aboutImg from "../../asserts/images/about.jpg";
-import aboutImg1 from "../../asserts/images/a1.jpg";
+import { aboutImg, aboutImg1 } from "../../helpers/data/aboutData.js";
 
 const About = () => {
   return (
     <div className="about-wrapper" id="about">
-      <div className="max-width text-center">
+      <div className="container text-center">
         <div className="about">
           <div className="about-title">About Our SUN RISE</div>
           <div className="about-para ">

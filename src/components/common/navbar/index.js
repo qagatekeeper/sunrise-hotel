@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
+import { menuList } from "../../../helpers/data/navbarData.js";
+
 const Navbar = () => {
   const [active, setActive] = useState("home");
 
@@ -19,72 +21,19 @@ const Navbar = () => {
           <div className="navbar-right">
             <div className="navbar-menu">
               <ul className="navbar-menu-list flex">
-                <li className="navbar-menu-item">
-                  <a
-                    href="#home"
-                    onClick={() => setActive("home")}
-                    className={`navbar-menu-link ${
-                      active === "home" ? "active" : ""
-                    }`}
-                  >
-                    home
-                  </a>
-                </li>
-                <li className="navbar-menu-item">
-                  <a
-                    href="#about"
-                    onClick={() => setActive("about")}
-                    className={`navbar-menu-link ${
-                      active === "about" ? "active" : ""
-                    }`}
-                  >
-                    about
-                  </a>
-                </li>
-                <li className="navbar-menu-item">
-                  <a
-                    href="#team"
-                    onClick={() => setActive("team")}
-                    className={`navbar-menu-link ${
-                      active === "team" ? "active" : ""
-                    }`}
-                  >
-                    team
-                  </a>
-                </li>
-                <li className="navbar-menu-item">
-                  <a
-                    href="#gallery"
-                    onClick={() => setActive("gallery")}
-                    className={`navbar-menu-link ${
-                      active === "gallery" ? "active" : ""
-                    }`}
-                  >
-                    gallery
-                  </a>
-                </li>
-                <li className="navbar-menu-item">
-                  <a
-                    href="#rooms"
-                    onClick={() => setActive("rooms")}
-                    className={`navbar-menu-link ${
-                      active === "rooms" ? "active" : ""
-                    }`}
-                  >
-                    rooms
-                  </a>
-                </li>
-                <li className="navbar-menu-item">
-                  <a
-                    href="#contact-us"
-                    onClick={() => setActive("contact-us")}
-                    className={`navbar-menu-link ${
-                      active === "contact-us" ? "active" : ""
-                    }`}
-                  >
-                    contact us
-                  </a>
-                </li>
+                {menuList.map((item, index) => (
+                  <li className="navbar-menu-item" key={index}>
+                    <a
+                      href={`#${item.name}`}
+                      onClick={() => setActive(`${item.name}`)}
+                      className={`navbar-menu-link ${
+                        active === `${item.name}` ? "active" : ""
+                      }`}
+                    >
+                      {`${item.name}`}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

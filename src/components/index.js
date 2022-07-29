@@ -4,6 +4,9 @@ import Experience from "./experience";
 import About from "./about";
 import Services from "./services";
 import Team from "./team";
+import Gallery from "./gallery";
+import Rooms from "./rooms";
+import ContactUs from "./contactUs";
 
 export {
   Slider,
@@ -14,4 +17,7 @@ export {
   About,
   Services,
   Team,
+  Gallery,
+  Rooms,
+  ContactUs,
 };

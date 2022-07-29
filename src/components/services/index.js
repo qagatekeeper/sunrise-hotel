@@ -5,7 +5,7 @@ import "./services.css";
 const Services = () => {
   return (
     <div className="servixes-wrapper">
-      <div className="max-width">
+      <div className="container">
         <h3 className="services-header text-center">Our Services</h3>
         <div className="services-bottom grid">
           <div className="services-bottom-left">
@@ -16,7 +16,7 @@ const Services = () => {
           </div>
           <div className="services-bottom-right">
             <ServiceCard
-              icon={<i class="uil uil-clock-nine"></i>}
+              icon={<i className="uil uil-clock-nine"></i>}
               title={"hello"}
             />
           </div>

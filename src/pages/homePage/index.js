@@ -7,6 +7,9 @@ import {
   About,
   Services,
   Team,
+  Gallery,
+  Rooms,
+  ContactUs,
 } from "../../components";
 
 const HomePage = () => {
@@ -19,6 +22,9 @@ const HomePage = () => {
       <About />
       <Services />
       <Team />
+      <Gallery />
+      <Rooms />
+      <ContactUs />
     </>
   );
 };
