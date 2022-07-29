@@ -10,7 +10,7 @@ const Team = () => {
   return (
     <div className="team-wrapper" id="team">
       <div className="container text-center">
-        <h1 className="team-title">Meet Our Team</h1>
+        <h1 className="title">Meet Our Team</h1>
         <div className="team-tab-list">
           {teamlist.map((teamData, index) => (
             <TeamList

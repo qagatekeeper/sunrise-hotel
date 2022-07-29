@@ -16,7 +16,7 @@
   justify-content: center;
 }
 
-.jc-space-beetwen {
+.jc-space-between {
   justify-content: space-between;
 }
 
@@ -51,13 +51,6 @@
 .gap-4 {
   gap: 4rem;
 }
-
-/* .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-} */
 
 @media all and (max-width: 1279px) {
   .max-width {
@@ -122,4 +115,19 @@ label {
 ul {
   margin: 0;
   padding: 0;
+}
+
+
+
+
+
+.title {
+  font-size: 48px;
+  color: var(--bg-card-hover);
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin: 0;
+  margin-bottom: 48px;
+  text-transform: capitalize;
+  font-family: "Oswald", sans-serif;
 }

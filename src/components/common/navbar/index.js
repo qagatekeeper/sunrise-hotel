@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="navbar-wrapper flex absolute-center">
       <div className="navbar-container container">
-        <div className="navbar flex ai-center jc-space-beetwen">
+        <div className="navbar flex ai-center jc-space-between">
           <div className="navbar-left">
             <h1 className>
               <a href="#123" className="navbar-brand">

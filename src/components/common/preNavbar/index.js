@@ -5,7 +5,7 @@ import "./preNavbar.css";
 const PreNavbar = () => {
   return (
     <div className="pre-navbar-wrapper" id="home">
-      <div className="pre-navbar flex absolute-center jc-space-beetwen">
+      <div className="pre-navbar flex absolute-center jc-space-between">
         <IconGrp />
         <div className="pre-navbar-contacts-menus">
           <div className="pre-navbar-contacts-menu-items flex">
