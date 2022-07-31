@@ -7,6 +7,7 @@ import Team from "./team";
 import Gallery from "./gallery";
 import Rooms from "./rooms";
 import ContactUs from "./contactUs";
+import VisitorExpression from "./visitorExp";
 
 export {
   Slider,
@@ -20,4 +21,5 @@ export {
   Gallery,
   Rooms,
   ContactUs,
+  VisitorExpression,
 };
