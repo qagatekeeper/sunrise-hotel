@@ -11,6 +11,7 @@ import {
   Rooms,
   ContactUs,
   VisitorExpression,
+  Footer,
 } from "../../components";
 
 const HomePage = () => {
@@ -27,6 +28,7 @@ const HomePage = () => {
       <Rooms />
       <VisitorExpression />
       <ContactUs />
+      <Footer />
     </>
   );
 };
