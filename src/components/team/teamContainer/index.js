@@ -27,7 +27,9 @@ const TeamContainer = ({
           <div className="social-icons flex">
             <IconGrp />
             <div className="pre-navbar-logo absolute-center flex wifi cursor-pointer">
-              <i className="uil uil-rss"></i>
+              <a href="#home" className="pre-navbar-logo flex absolute-center">
+                <i className="uil uil-rss"></i>
+              </a>
             </div>
           </div>
         </div>

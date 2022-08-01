@@ -14,7 +14,7 @@ const PreNavbar = () => {
                 <i className="fa-solid fa-envelope"></i>
               </div>
               <div className="pre-navbar-menu-text">
-                <a href="#123">info@sunrise.com</a>
+                <a href="mailto:info@sunrise.com">info@sunrise.com</a>
               </div>
             </div>
             <div className="pre-navbar-menu-item flex gap-1">

@@ -8,6 +8,7 @@ import Gallery from "./gallery";
 import Rooms from "./rooms";
 import ContactUs from "./contactUs";
 import VisitorExpression from "./visitorExp";
+import Reservation from "./reservation";
 
 export {
   Slider,
@@ -23,4 +24,5 @@ export {
   ContactUs,
   VisitorExpression,
   Footer,
+  Reservation,
 };

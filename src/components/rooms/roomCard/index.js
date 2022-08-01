@@ -1,6 +1,7 @@
 import React from "react";
 import Rating from "@mui/material/Rating";
 import Stack from "@mui/material/Stack";
+import { Link } from "react-router-dom";
 
 const RoomCard = ({ roomImg, roomCategory, prise, value }) => {
   return (
@@ -26,9 +27,9 @@ const RoomCard = ({ roomImg, roomCategory, prise, value }) => {
               <span>$</span>
               {prise}
             </h3>
-            <a href="#" className="btn">
+            <Link to="/reservation" className="btn">
               Book Now
-            </a>
+            </Link>
           </div>
         </div>
       </div>
