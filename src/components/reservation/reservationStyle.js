@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
-export const ReservationWrapper = styled.div``;
+export const ReservationWrapper = styled.div`
+  width: 100vw;
+  height: auto;
+`;
 
 export const ReservationLeft = styled.div`
   flex: 1;
-  background: #09192a;
+  background: var(--bg-reservation-left);
   width: 100%;
-  height: 1200px;
+  height: auto;
 `;
 
 export const ReservationNavigationToHome = styled.div`
@@ -15,13 +18,13 @@ export const ReservationNavigationToHome = styled.div`
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   i {
-    color: #fff;
+    color: var(--white);
     font-size: 1rem;
     font-weight: normal;
   }
 
   h3 {
-    color: #fff;
+    color: var(--white);
     font-size: 0.8rem;
     letter-spacing: 1px;
     font-family: "Lato", sans-serif;
@@ -34,13 +37,13 @@ export const ReservationNavigationToHome = styled.div`
 export const ReservationRight = styled.div`
   flex: 4.5;
   padding: 3rem 2rem;
-  min-height: 1200px;
-  background: #e5ebf2;
+  height: auto;
+  background: var(--bg-reservation-right);
 `;
 
 export const ReservationRightTop = styled.div`
   h1 {
-    color: #333333;
+    color: var(--c-text);
     font-size: 36px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -62,6 +65,7 @@ export const ReservationRightCenterLeft = styled.div`
   border: 1px solid var(--color-link-blue);
   border-radius: 5px;
   gap: 1rem;
+  background-color: var(--white);
 `;
 
 export const Form = styled.form`
@@ -72,15 +76,43 @@ export const FormGroup = styled.div`
   text-align: start;
   gap: 0.7rem;
   padding-bottom: 1rem;
+
+  label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1.1rem;
+    letter-spacing: 2px;
+  }
+
+  input {
+    height: 37px;
+    width: 100%;
+    padding: 6px 12px;
+    letter-spacing: 1px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+    border-radius: 5px;
+    transition: border 0.5s;
+    ::placeholder {
+      color: var(--color-text);
+    }
+    &:focus {
+      border: 1px solid var(--color-link-blue);
+    }
+  }
 `;
 
 export const ReservationRightCenterRight = styled.div`
-  width: 100%;
   height: max-content;
-  flex: 1;
+  flex: 1.3;
   border: 1px solid var(--color-link-blue);
   border-radius: 5px;
   gap: 1rem;
+  background-color: var(--white);
 `;
 
 export const CardTitle = styled.div`
@@ -91,4 +123,72 @@ export const CardTitle = styled.div`
   color: var(--white);
   background: var(--color-link-blue);
   letter-spacing: 1px;
+`;
+
+export const ReservationRightBottom = styled.div`
+  background-color: var(--white);
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem 1rem;
+
+  h1 {
+    font-size: 1.1rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+    margin: 0;
+    color: var(--color-light-gray);
+  }
+  h2 {
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+    color: var(--color-light-gray);
+    padding-bottom: 30px;
+    margin: 0;
+  }
+  p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: "Lato", sans-serif;
+    color: var(--color-light-gray);
+    text-transform: none;
+    padding-bottom: 10px;
+  }
+
+  input {
+    border: 1px solid var(--color-light-gray);
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    font-size: 1rem;
+    transition: box-shadow 0.5s;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+  }
+  ::placeholder {
+    color: var(--color-text);
+  }
+
+  input:focus {
+    border: 1px solid var(--color-link-blue);
+  }
+`;
+
+export const FormBtn = styled.div`
+  .btn {
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 6px 12px;
+    background-color: var(--color-link-blue);
+    border: none;
+    width: max-content;
+    height: 2rem;
+    cursor: pointer;
+    color: var(--white);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
 `;

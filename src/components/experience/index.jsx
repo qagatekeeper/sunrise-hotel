@@ -1,6 +1,6 @@
 import React from "react";
 import "./experience.css";
-import ExpCard from "./expCard";
+import ExpCard from "./expCard/expCard";
 import { cardData } from "../../helpers/data/experienceData.js";
 
 const Experience = () => {
