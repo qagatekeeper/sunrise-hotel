@@ -2,15 +2,16 @@ import React from "react";
 import "./experience.css";
 import ExpCard from "./expCard/expCard";
 import { cardData } from "../../helpers/data/experienceData.js";
+import { Link } from "react-router-dom";
 
 const Experience = () => {
   return (
     <div className="exp-wrapper">
       <div className="exp-title">
         <div>
-          <a href="#123" className="exp-link">
+          <Link to="/reservation" className="exp-link">
             ROOM RESERVATION
-          </a>
+          </Link>
         </div>
       </div>
       <div className="exp-content flex absolute-center">

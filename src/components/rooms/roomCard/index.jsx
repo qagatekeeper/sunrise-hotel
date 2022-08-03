@@ -3,7 +3,8 @@ import Rating from "@mui/material/Rating";
 import Stack from "@mui/material/Stack";
 import { Link } from "react-router-dom";
 
-const RoomCard = ({ roomImg, roomCategory, prise, value }) => {
+const RoomCard = (props) => {
+  const { roomImg, roomCategory, prise, value } = props;
   return (
     <>
       <div className="room-card">

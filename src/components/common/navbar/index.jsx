@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="navbar-container container">
         <div className="navbar flex ai-center jc-space-between">
           <div className="navbar-left">
-            <h1 className>
+            <h1>
               <a href="#home" className="navbar-brand">
                 SUN
                 <span> RISE</span>

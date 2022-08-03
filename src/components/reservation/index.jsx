@@ -6,6 +6,7 @@ import {
   ReservationRightCenter,
   ReservationRightBottom,
   FormBtn,
+  Form,
 } from "./reservationStyle.js";
 
 import ReservationLeftSide from "./reservationCom/reservationLeftSide.jsx";

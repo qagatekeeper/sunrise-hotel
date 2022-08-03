@@ -104,6 +104,41 @@ export const FormGroup = styled.div`
       border: 1px solid var(--color-link-blue);
     }
   }
+  .radioBtn {
+    border: 10px solid red;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+`;
+
+export const RadioBtn = styled.label`
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  width: max-content;
+  font-size: 1rem !important;
+
+  input {
+    padding: 0;
+    margin: 0;
+    height: max-content;
+    cursor: pointer;
+    width: max-content;
+  }
+  span {
+    color: var(--black);
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding-left: 0.5rem;
+  }
 `;
 
 export const ReservationRightCenterRight = styled.div`

@@ -11,7 +11,7 @@ export const visitorExpData = [
     title: "Worth to come again",
     para1:
       "Sed tempus vestibulum lacus blandit faucibus.Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, at imperdiet urna. ",
-    starValue: "3",
+    starValue: 3,
     name: "Julia Rose",
     countryName: "Germany",
   },
@@ -21,7 +21,7 @@ export const visitorExpData = [
     title: "Worth to come again",
     para1:
       "Sed tempus vestibulum lacus blandit faucibus.Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, at imperdiet urna. ",
-    starValue: "4",
+    starValue: 4,
     name: "Jahnatan Smith",
     countryName: "United States",
   },
@@ -31,7 +31,7 @@ export const visitorExpData = [
     title: "Worth to come again",
     para1:
       "Sed tempus vestibulum lacus blandit faucibus.Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, at imperdiet urna. ",
-    starValue: "4.5",
+    starValue: 4.5,
     name: "Rosalind Cloer",
     countryName: "Italy",
   },
@@ -41,7 +41,7 @@ export const visitorExpData = [
     title: "Worth to come again",
     para1:
       "Sed tempus vestibulum lacus blandit faucibus.Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, at imperdiet urna. ",
-    starValue: "3.5",
+    starValue: 3.5,
     name: "Amie Bublitz",
     countryName: "Switzerland",
   },

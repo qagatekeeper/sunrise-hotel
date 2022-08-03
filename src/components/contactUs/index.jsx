@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import IconGrp from "../common/iconGroup";
 import "./contactUs.css";
+import { useForm } from "react-hook-form";
 
 const ContactUs = () => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    trigger,
+    formState: { errors },
+    reset,
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    reset();
+  };
+
+  const onError = (errors) => {
+    console.log(errors);
+  };
+
+  // console.log(errors);
+  // console.log(watch);
+
   return (
     <div className="contactUs-wrapper" id="contact-us">
       <div className="container">
@@ -10,28 +32,83 @@ const ContactUs = () => {
           <div className="contactUs-left">
             <h3>Contact Us</h3>
             <p>Sign Up For Our News Letters</p>
-            <form action="">
+            <form onSubmit={handleSubmit(onSubmit, onError)}>
               <div className="form-group flex flex-column">
                 <label>Full Name:</label>
                 <input
                   type="text"
                   placeholder="Full name"
-                  name="fullName"
-                  reqired
+                  autoComplete="Off"
+                  className={`${errors.fullName && "invalid"}`}
+                  {...register("fullName", {
+                    required: "fullName is Required",
+                    minLength: {
+                      value: 3,
+                      message: "fullName must have atleast 3 characters.",
+                    },
+                  })}
+                  onBlur={() => {
+                    trigger("fullName");
+                  }}
+                  onKeyUp={() => {
+                    trigger("fullName");
+                  }}
                 />
+                {errors.fullName && (
+                  <p className="errors">{errors.fullName.message}</p>
+                )}
               </div>
+
               <div className="form-group flex flex-column">
                 <label>Phone Number:</label>
                 <input
                   type="text"
                   placeholder="phone number"
-                  name="phoneNumber"
-                  reqired
+                  autoComplete="Off"
+                  className={`${errors.phoneNumber && "invalid"}`}
+                  {...register("phoneNumber", {
+                    required: "phoneNumber is Required",
+                    pattern: {
+                      value:
+                        /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/,
+                      message: "Invalid phone number",
+                    },
+                  })}
+                  onBlur={() => {
+                    trigger("phoneNumber");
+                  }}
+                  onKeyUp={() => {
+                    trigger("phoneNumber");
+                  }}
                 />
+                {errors.phoneNumber && (
+                  <p className="errors">{errors.phoneNumber.message}</p>
+                )}
               </div>
               <div className="form-group flex flex-column">
                 <label>Email Address:</label>
-                <input type="email" placeholder="email" name="email" reqired />
+                <input
+                  type="email"
+                  placeholder="email"
+                  autoComplete="Off"
+                  className={`${errors.email && "invalid"}`}
+                  {...register("email", {
+                    required: "email is Required",
+                    pattern: {
+                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                      message: "Invalid email address",
+                    },
+                  })}
+                  onBlur={() => {
+                    trigger("email");
+                  }}
+                  onKeyUp={() => {
+                    trigger("email");
+                  }}
+                />
+                {errors.email && (
+                  <p className="errors">{errors.email.message}</p>
+                )}
               </div>
               <div className="form-btn">
                 <input
