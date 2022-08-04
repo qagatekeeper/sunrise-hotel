@@ -15,9 +15,14 @@ import ReservationLeftSide from "./reservationCom/reservationLeftSide.jsx";
 import ReservationRCL from "./reservationCom/ReservationRCL.jsx";
 import ReservationRCR from "./reservationCom/reservationRCR.jsx";
 import { useForm } from "react-hook-form";
+import { useEffect, useState } from "react";
 
 const Reservation = () => {
-  var val = Math.floor(1000000000 + Math.random() * 9000000000);
+  const [val, setVal] = useState("");
+  useEffect(() => {
+    setVal(Math.floor(1000000000 + Math.random() * 9000000000));
+  }, []);
+
   const {
     handleSubmit,
     formState: { errors },
@@ -66,14 +71,12 @@ const Reservation = () => {
             <div className="flex gap-1">
               <input type="text" name="code1" />
               <input type="hidden" name="code" value={val} />
-              {/* <FormBtn> */}
               <input
                 type="submit"
                 name="submit"
                 value="Submit"
                 className="btn"
               />
-              {/* </FormBtn> */}
             </div>
           </ReservationRightBottom>
         </ReservationRightCenter>

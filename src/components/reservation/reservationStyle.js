@@ -246,6 +246,16 @@ export const ReservationRightBottom = styled.div`
     text-transform: capitalize;
     letter-spacing: 1px;
   }
+
+  .btn-opacity-full {
+    opacity: 1;
+    font-size: 50rem;
+  }
+
+  .btn-opacity-half {
+    opacity: 0.5;
+    font-size: 1px;
+  }
 `;
 
 export const FormBtn = styled.div`

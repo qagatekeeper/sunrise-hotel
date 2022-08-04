@@ -1,4 +1,4 @@
-import { HomePage, ReservationPage } from "./pages";
+import { HomePage, LoginPage, ReservationPage } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
           <Route path="/">
             <Route index element={<HomePage />} />
             <Route path="reservation" element={<ReservationPage />} />
+            <Route path="admin" element={<LoginPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
