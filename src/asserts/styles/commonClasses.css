@@ -131,3 +131,19 @@ ul {
   text-transform: capitalize;
   font-family: "Oswald", sans-serif;
 }
+
+.errors{
+  color: red !important;
+  margin: 0px !important;
+  padding: 0 !important;
+  text-align: left !important;
+  font-size: 0.8rem !important;
+  font-family: "Lato",sans-serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: none !important;
+}
+
+.invalid {
+  border: 1px solid red !important;
+}

@@ -56,6 +56,7 @@ export const ReservationRightTop = styled.div`
 
 export const ReservationRightCenter = styled.div`
   gap: 2rem;
+  flex-wrap: wrap;
 `;
 
 export const ReservationRightCenterLeft = styled.div`
@@ -74,8 +75,18 @@ export const Form = styled.form`
 
 export const FormGroup = styled.div`
   text-align: start;
-  gap: 0.7rem;
+  gap: 0rem;
   padding-bottom: 1rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .radio {
+    display: flex;
+    flex-direction: row;
+  }
 
   label {
     font-size: 0.8rem;
@@ -84,6 +95,7 @@ export const FormGroup = styled.div`
     letter-spacing: 2px;
   }
 
+  select,
   input {
     height: 37px;
     width: 100%;
@@ -116,6 +128,16 @@ export const FormGroup = styled.div`
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+  }
+
+  p {
+    color: red;
+    margin-bottom: 0px !important;
+    padding: 0 !important;
+    text-align: left;
+    font-size: 0.7rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
   }
 `;
 
@@ -209,6 +231,20 @@ export const ReservationRightBottom = styled.div`
 
   input:focus {
     border: 1px solid var(--color-link-blue);
+  }
+
+  .btn {
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 6px 12px;
+    background-color: var(--color-link-blue);
+    border: none;
+    width: max-content;
+    height: 2rem;
+    cursor: pointer;
+    color: var(--white);
+    text-transform: capitalize;
+    letter-spacing: 1px;
   }
 `;
 

@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import IconGrp from "../common/iconGroup";
 import "./contactUs.css";
 import { useForm } from "react-hook-form";
@@ -22,8 +21,8 @@ const ContactUs = () => {
     console.log(errors);
   };
 
-  // console.log(errors);
-  // console.log(watch);
+  console.log(errors);
+  console.log(watch);
 
   return (
     <div className="contactUs-wrapper" id="contact-us">
@@ -135,7 +134,10 @@ const ContactUs = () => {
               New Kalmunai Road, Batticaloa, Sri Lanka
             </h2>
             <IconGrp />
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.7905052320443!2d-77.84987248482734!3d39.586871613613056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c9f6a80ccf0661%3A0x7210426c67abc40!2sVirginia+Welcome+Center%2FSafety+Rest+Area!5e0!3m2!1sen!2sin!4v1485760915662"></iframe>
+            <iframe
+              title="google map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.7905052320443!2d-77.84987248482734!3d39.586871613613056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c9f6a80ccf0661%3A0x7210426c67abc40!2sVirginia+Welcome+Center%2FSafety+Rest+Area!5e0!3m2!1sen!2sin!4v1485760915662"
+            ></iframe>
           </div>
         </div>
       </div>
