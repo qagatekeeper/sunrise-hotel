@@ -1,4 +1,4 @@
-import { Navbar, IconGrp, PreNavbar } from "./common";
+import { Navbar, IconGrp, PreNavbar, Footer } from "./common";
 import Slider from "./Slider";
 import Experience from "./experience";
 import About from "./about";
@@ -7,6 +7,8 @@ import Team from "./team";
 import Gallery from "./gallery";
 import Rooms from "./rooms";
 import ContactUs from "./contactUs";
+import VisitorExpression from "./visitorExp";
+import Reservation from "./reservation";
 
 export {
   Slider,
@@ -20,4 +22,7 @@ export {
   Gallery,
   Rooms,
   ContactUs,
+  VisitorExpression,
+  Footer,
+  Reservation,
 };

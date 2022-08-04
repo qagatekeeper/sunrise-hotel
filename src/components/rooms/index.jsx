@@ -16,6 +16,7 @@ const Rooms = () => {
                 roomCategory={item.roomCategory}
                 prise={item.prise}
                 value={item.value}
+                key={index}
               />
             ))}
           </div>

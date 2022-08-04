@@ -7,25 +7,25 @@ export const roomImgs = [
   {
     roomImg: r1,
     roomCategory: "Deluxe Room",
-    prise: "320",
-    value: "4",
+    prise: 320,
+    value: 4,
   },
   {
     roomImg: r2,
     roomCategory: "Luxuri Room",
-    prise: "220",
-    value: "4.5",
+    prise: 220,
+    value: 4.5,
   },
   {
     roomImg: r3,
     roomCategory: "Guest Room",
-    prise: "180",
-    value: "3.5",
+    prise: 180,
+    value: 3.5,
   },
   {
     roomImg: r4,
     roomCategory: "Single Room",
-    prise: "150",
-    value: "1.5",
+    prise: 150,
+    value: 1.5,
   },
 ];

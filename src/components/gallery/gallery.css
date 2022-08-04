@@ -50,3 +50,7 @@
   color: var(--white);
   cursor: pointer;
 }
+
+.uil-scenery:before {
+  content: '\ea40';
+}

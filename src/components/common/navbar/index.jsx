@@ -10,8 +10,8 @@ const Navbar = () => {
       <div className="navbar-container container">
         <div className="navbar flex ai-center jc-space-between">
           <div className="navbar-left">
-            <h1 className>
-              <a href="#123" className="navbar-brand">
+            <h1>
+              <a href="#home" className="navbar-brand">
                 SUN
                 <span> RISE</span>
                 <p className="para">Your Dreamy Resort</p>

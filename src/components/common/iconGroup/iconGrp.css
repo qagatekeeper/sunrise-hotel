@@ -1,8 +1,11 @@
-.pre-navbar-logo {
+.pre-navbar-logo  {
   font-size: 1rem;
-  color: var(--white);
   height: 30px;
   width: 30px;
+}
+
+.pre-navbar-logo a i {
+  color: var(--white);
 }
 
 .facebook {

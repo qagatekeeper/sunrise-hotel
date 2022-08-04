@@ -96,22 +96,24 @@ p{
     background-size: cover;
 }
 
-.swiper-pagination-bullet {
+.slider-container .swiper-pagination-bullet {
     background: var(--white);
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 0.6rem;
+    height: 0.6rem;
     border-radius: .5rem;
-    opacity: 1;    
+    opacity: 1; 
+   margin: 0 1rem !important;
+
 }
 
-.swiper-pagination {
+.slider-container .swiper-pagination {
    top:53%;
 }
 
-.swiper-pagination-bullet-active{
+.slider-container .swiper-pagination-bullet-active{
   background-color: var(--bg-yellow);
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.6rem;
+  height: 0.6rem;
   border-radius: .5rem;
   top:10px;
 }
