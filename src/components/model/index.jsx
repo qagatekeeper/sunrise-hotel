@@ -1,6 +1,5 @@
-import React, { useState } from "react";
 import "./model.css";
-import img from "../../asserts/images/1.jpg";
+import img from "../../assets/images/1.jpg";
 
 const Model = ({ flage, setFlage }) => {
   return (

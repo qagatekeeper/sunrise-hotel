@@ -1,7 +1,7 @@
 .contactUs-wrapper {
   width: 100vw;
   height: 100vh;
-  background-image: url(../../asserts/images/contact.jpg);
+  background-image: url(../../assets/images/contact.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

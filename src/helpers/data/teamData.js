@@ -1,11 +1,11 @@
-import team1 from "../../asserts/images/teams1.jpg";
-import team2 from "../../asserts/images/teams2.jpg";
-import team3 from "../../asserts/images/teams3.jpg";
-import team4 from "../../asserts/images/teams4.jpg";
-import teamb1 from "../../asserts/images/teamb1.jpg";
-import teamb2 from "../../asserts/images/teamb2.jpg";
-import teamb3 from "../../asserts/images/teamb3.jpg";
-import teamb4 from "../../asserts/images/teamb4.jpg";
+import team1 from "../../assets/images/teams1.jpg";
+import team2 from "../../assets/images/teams2.jpg";
+import team3 from "../../assets/images/teams3.jpg";
+import team4 from "../../assets/images/teams4.jpg";
+import teamb1 from "../../assets/images/teamb1.jpg";
+import teamb2 from "../../assets/images/teamb2.jpg";
+import teamb3 from "../../assets/images/teamb3.jpg";
+import teamb4 from "../../assets/images/teamb4.jpg";
 
 export const teamlist = [
   {

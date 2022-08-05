@@ -79,19 +79,19 @@ p{
     z-index: 1000;
 }
 .slider-1{
-    background-image: url(../../asserts/images/1.jpg);
+    background-image: url(../../assets/images/1.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
 }
 .slider-2{
-    background-image: url(../../asserts/images/2.jpg);
+    background-image: url(../../assets/images/2.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
 }
 .slider-3{
-    background-image: url(../../asserts/images/3.jpg);
+    background-image: url(../../assets/images/3.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;

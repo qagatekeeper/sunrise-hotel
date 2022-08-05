@@ -1,6 +1,7 @@
 import React from "react";
 import "./adminLoginPage.css";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
   const {
@@ -11,9 +12,10 @@ const LoginPage = () => {
     reset,
   } = useForm();
 
+  let navigate = useNavigate();
+
   const onSubmit = (data) => {
-    console.log(data);
-    reset();
+    navigate("/admin/home", { replace: true });
   };
 
   const onError = (errors) => {
@@ -38,19 +40,11 @@ const LoginPage = () => {
                 className={`${errors.username && "invalid"}`}
                 {...register("username", {
                   required: "Username is Required",
-                  minLength: {
-                    value: 3,
-                    message: "Username must have atleast 3 characters.",
-                  },
-                  validate: (value) =>
-                    value === "Admin" || "only Admin is allowed",
+                  validate: (value) => value === "Admin",
                 })}
                 onBlur={() => {
                   trigger("username");
                 }}
-                // onKeyUp={() => {
-                //   trigger("username");
-                // }}
               />
               {errors.username && (
                 <p className="errors">{errors.username.message}</p>
@@ -64,17 +58,9 @@ const LoginPage = () => {
                 className={`${errors.password && "invalid"}`}
                 {...register("password", {
                   required: "Password is Required",
-                  minLength: {
-                    value: 3,
-                    message: "Password must have atleast 3 characters.",
-                  },
-                  validate: (value) =>
-                    value === "12345" || "only password = 12345 is allowed",
+                  validate: (value) => value === "12345",
                 })}
                 onBlur={() => {
-                  trigger("password");
-                }}
-                onKeyUp={() => {
                   trigger("password");
                 }}
               />
