@@ -1,0 +1,11 @@
+.status-item-wrapper {
+    padding: 15px;
+    border: 1px solid #428bca;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.status-item {
+    padding: 20px 15px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #428bca;
+}

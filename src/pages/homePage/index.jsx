@@ -17,17 +17,17 @@ import {
 const HomePage = () => {
   return (
     <>
-      <PreNavbar />
+      {/* <PreNavbar /> */}
       <Navbar />
-      <Slider />
-      <Experience />
+      {/* <Slider /> */}
+      {/* <Experience /> */}
       <About />
-      <Services />
-      <Team />
-      <Gallery />
-      <Rooms />
-      <VisitorExpression />
-      <ContactUs />
+      {/* <Services /> */}
+      {/* <Team /> */}
+      {/* <Gallery /> */}
+      {/* <Rooms /> */}
+      {/* <VisitorExpression /> */}
+      {/* <ContactUs /> */}
       <Footer />
     </>
   );

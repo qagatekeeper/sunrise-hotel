@@ -40,7 +40,7 @@ const ContactUs = () => {
                   autoComplete="Off"
                   className={`${errors.fullName && "invalid"}`}
                   {...register("fullName", {
-                    required: "fullName is Required",
+                    required: "FullName is Required",
                     minLength: {
                       value: 3,
                       message: "fullName must have atleast 3 characters.",
@@ -66,7 +66,7 @@ const ContactUs = () => {
                   autoComplete="Off"
                   className={`${errors.phoneNumber && "invalid"}`}
                   {...register("phoneNumber", {
-                    required: "phoneNumber is Required",
+                    required: "PhoneNumber is Required",
                     pattern: {
                       value:
                         /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/,
@@ -92,7 +92,7 @@ const ContactUs = () => {
                   autoComplete="Off"
                   className={`${errors.email && "invalid"}`}
                   {...register("email", {
-                    required: "email is Required",
+                    required: "Email is Required",
                     pattern: {
                       value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                       message: "Invalid email address",
