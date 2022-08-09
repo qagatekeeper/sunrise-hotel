@@ -1,40 +1,52 @@
 import React from "react";
 import "./statusItem.css";
 
-const StatusItem = () => {
+const StatusItem = ({ show, data }) => {
   return (
     <>
-      <div className="status-item-wrapper">
+      <div
+        className={` ${
+          show === "panel1" ? "status-item-wrapper open" : "status-item-wrapper"
+        }`}
+      >
         <div className="status-item">
-          <table>
-            <tr>
-              <th>Id</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Country</th>
-              <th>Room</th>
-              <th>Bedding</th>
-              <th>Meal</th>
-              <th>Check-In</th>
-              <th>Check-Out</th>
-              <th>Status</th>
-              <th>More</th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Rakesh</td>
-              <td>Rkathiriya@gmail.com</td>
-              <td>India</td>
-              <td>Superior Room</td>
-              <td>Single</td>
-              <td>Room only</td>
-              <td>2022-07-09</td>
-              <td>2022-08-03</td>
-              <td>Not Conform</td>
-              <td>
-                <button className="btn">Action</button>
-              </td>
-            </tr>
+          <table className="status-table">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Room</th>
+                <th>Bedding</th>
+                <th>Meal</th>
+                <th>Check-In</th>
+                <th>Check-Out</th>
+                <th>Status</th>
+                <th>More</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.map((data, index) => (
+                <tr key={index}>
+                  <td>{data.id}</td>
+                  <td>{data.name}</td>
+                  <td>{data.email}</td>
+                  <td>{data.country}</td>
+                  <td>{data.room}</td>
+                  <td>{data.beddingType}</td>
+                  <td>{data.meal}</td>
+                  <td>{data.checkIn}</td>
+                  <td>{data.checkOut}</td>
+                  <td>{data.status}</td>
+                  <td>
+                    <a href="#1" className="btn">
+                      Action
+                    </a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
           </table>
         </div>
       </div>

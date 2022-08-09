@@ -37,6 +37,7 @@ const AdminSidebar = (props) => {
             activeTab === item.title ? "active" : ""
           }`}
           onClick={() => setActiveTab(`${item.title}`)}
+          key={index}
         >
           <a href={`#${item.title}`}>
             {item.icon}

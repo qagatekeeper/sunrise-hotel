@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import "./adminMain.css";
 import AdminSidebar from "../adminSidebar";
-import Status from "../adminStatus";
+import {
+  Status,
+  NewsLetters,
+  RoomBooking,
+  Payment,
+  Profile,
+  Logout,
+} from "../index.jsx";
 
 const AdminMain = () => {
   const [activeTab, setActiveTab] = useState("Status");
@@ -22,22 +29,22 @@ const getCorrectScreen = (tab) => {
       return <Status />;
 
     case "News letters":
-      return "News letters";
+      return <NewsLetters />;
 
     case "Room Booking":
-      return "Room Booking";
+      return <RoomBooking />;
 
     case "Payment":
-      return "Payment";
+      return <Payment />;
 
     case "Profile":
-      return "Profile";
+      return <Profile />;
 
     case "Logout":
-      return "Logout";
+      return <Logout />;
 
     default:
-      return "status";
+      return <Status />;
   }
 };
 
