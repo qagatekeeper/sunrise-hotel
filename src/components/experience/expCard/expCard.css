@@ -104,3 +104,41 @@
   /* -ms-transform: translateY(0px); */
   transform: translateY(0px);
 }
+
+/* =====================  media queries ====================== */
+
+@media (max-width: 1080px) {
+  .expCard-wrapper {
+    height: 230px;
+  }
+  .expCard-icon {
+    font-size: 3rem;
+  }
+  .expCard-title {
+    font-size: 0.9em;
+  }
+  .expCard-category {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 0.8em;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 414px) {
+  .expCard-wrapper {
+    height: 190px;
+  }
+  .expCard-icon {
+    font-size: 2.5rem;
+  }
+  .expCard-title {
+    font-size: 0.7rem;
+  }
+  .expCard-category {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+  }
+}

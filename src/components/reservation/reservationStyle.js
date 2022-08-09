@@ -56,26 +56,41 @@ export const ReservationRightTop = styled.div`
 
 export const ReservationRightCenter = styled.div`
   gap: 2rem;
+  /* flex-wrap: wrap; */
 `;
 
 export const ReservationRightCenterLeft = styled.div`
-  width: 100%;
+  /* width: 100%; */
+  /* padding: 1rem; */
   height: max-content;
-  flex: 1;
+  /* flex: 1; */
   border: 1px solid var(--color-link-blue);
   border-radius: 5px;
-  gap: 1rem;
+  /* gap: 1rem; */
   background-color: var(--white);
 `;
 
 export const Form = styled.form`
-  padding: 0.5rem 1rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 `;
 
 export const FormGroup = styled.div`
   text-align: start;
-  gap: 0.7rem;
-  padding-bottom: 1rem;
+  gap: 0rem;
+  padding: 0rem 1rem 0.5rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .radio {
+    display: flex;
+    flex-direction: row;
+  }
 
   label {
     font-size: 0.8rem;
@@ -84,6 +99,7 @@ export const FormGroup = styled.div`
     letter-spacing: 2px;
   }
 
+  select,
   input {
     height: 37px;
     width: 100%;
@@ -117,6 +133,16 @@ export const FormGroup = styled.div`
     -ms-user-select: none;
     user-select: none;
   }
+
+  p {
+    color: red;
+    margin-bottom: 0px !important;
+    padding: 0 !important;
+    text-align: left;
+    font-size: 0.7rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+  }
 `;
 
 export const RadioBtn = styled.label`
@@ -143,10 +169,10 @@ export const RadioBtn = styled.label`
 
 export const ReservationRightCenterRight = styled.div`
   height: max-content;
-  flex: 1.3;
+  /* flex: 1.3; */
   border: 1px solid var(--color-link-blue);
   border-radius: 5px;
-  gap: 1rem;
+  /* gap: 1rem; */
   background-color: var(--white);
 `;
 
@@ -158,6 +184,7 @@ export const CardTitle = styled.div`
   color: var(--white);
   background: var(--color-link-blue);
   letter-spacing: 1px;
+  margin-bottom: 0.5rem;
 `;
 
 export const ReservationRightBottom = styled.div`
@@ -209,6 +236,30 @@ export const ReservationRightBottom = styled.div`
 
   input:focus {
     border: 1px solid var(--color-link-blue);
+  }
+
+  .btn {
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 6px 12px;
+    background-color: var(--color-link-blue);
+    border: none;
+    width: max-content;
+    height: 2rem;
+    cursor: pointer;
+    color: var(--white);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+
+  .btn-opacity-full {
+    opacity: 1;
+    font-size: 50rem;
+  }
+
+  .btn-opacity-half {
+    opacity: 0.5;
+    font-size: 1px;
   }
 `;
 

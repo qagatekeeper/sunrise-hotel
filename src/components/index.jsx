@@ -9,6 +9,7 @@ import Rooms from "./rooms";
 import ContactUs from "./contactUs";
 import VisitorExpression from "./visitorExp";
 import Reservation from "./reservation";
+import Model from "./model";
 
 export {
   Slider,
@@ -25,4 +26,5 @@ export {
   VisitorExpression,
   Footer,
   Reservation,
+  Model,
 };

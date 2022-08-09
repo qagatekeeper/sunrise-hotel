@@ -1,12 +1,13 @@
 .about-wrapper {
-  width: 100%;
+  width: 100vw;
   height: auto;
-  padding: 5rem 0 21rem 0px;
+  padding: 70px 0 21rem 0px;
   background: var(--bg-about);
 }
 
 .about {
   position: relative;
+  width: 100%;
 }
 
 .about-para {
@@ -15,6 +16,7 @@
   line-height: 33px;
   letter-spacing: 0.5px;
   margin-bottom: 2rem;
+  text-align: center !important;
 }
 
 .about-img {

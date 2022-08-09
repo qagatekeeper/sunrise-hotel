@@ -1,8 +1,8 @@
-import imageBg1 from "../../asserts/images/5.jpg";
-import image1 from "../../asserts/images/c1.jpg";
-import image2 from "../../asserts/images/c2.jpg";
-import image3 from "../../asserts/images/c3.jpg";
-import image4 from "../../asserts/images/c4.jpg";
+import imageBg1 from "../../assets/images/5.jpg";
+import image1 from "../../assets/images/c1.jpg";
+import image2 from "../../assets/images/c2.jpg";
+import image3 from "../../assets/images/c3.jpg";
+import image4 from "../../assets/images/c4.jpg";
 
 export const visitorExpData = [
   {

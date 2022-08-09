@@ -1,7 +1,7 @@
-import r1 from "../../asserts/images/r1.jpg";
-import r2 from "../../asserts/images/r2.jpg";
-import r3 from "../../asserts/images/r3.jpg";
-import r4 from "../../asserts/images/r4.jpg";
+import r1 from "../../assets/images/r1.jpg";
+import r2 from "../../assets/images/r2.jpg";
+import r3 from "../../assets/images/r3.jpg";
+import r4 from "../../assets/images/r4.jpg";
 
 export const roomImgs = [
   {

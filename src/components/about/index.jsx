@@ -7,8 +7,8 @@ const About = () => {
     <div className="about-wrapper" id="about">
       <div className="container text-center">
         <div className="about">
-          <div className="title">About Our SUN RISE</div>
-          <div className="about-para ">
+          <h3 className="title">About Our SUN RISE</h3>
+          <div className="about-para">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.Sed tempus vestibulum lacus blandit faucibus. Nunc
             imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula,

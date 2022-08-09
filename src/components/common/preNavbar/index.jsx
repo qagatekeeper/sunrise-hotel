@@ -10,7 +10,7 @@ const PreNavbar = () => {
         <div className="pre-navbar-contacts-menus">
           <div className="pre-navbar-contacts-menu-items flex">
             <div className="pre-navbar-menu-item flex gap-1">
-              <div className="pre-navbar-menu-icon ">
+              <div className="pre-navbar-menu-icon">
                 <i className="fa-solid fa-envelope"></i>
               </div>
               <div className="pre-navbar-menu-text">
